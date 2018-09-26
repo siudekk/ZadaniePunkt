@@ -55,5 +55,26 @@ namespace ZadaniePunkt
             Console.WriteLine("Współrzędna Y: {0}",Y);
         }
 
+        public static Punkt operator +(Punkt p1, Punkt p2)
+        {
+            int x = p1.X+p2.X;
+            int y = p1.Y+p2.Y;
+            return new Punkt(x, y);            
+        }
+
+        public static Punkt operator -(Punkt p1, Punkt p2)
+        {
+            int x = p1.X-p2.X;
+            int y = p1.Y-p2.Y;
+            return new Punkt(x, y);            
+        }
+
+         public static Punkt operator *(Punkt p1, int a)
+        {
+            int x = p1.X*a;
+            int y = p1.Y*a;
+            return new Punkt(x, y);            
+        }
+
     }
 }

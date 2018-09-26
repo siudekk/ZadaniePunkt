@@ -8,7 +8,8 @@ namespace ZadaniePunkt
 {
     class Punkt
     {
-
+        public static int Licznik { get; private set; }
+        
         public int X { get; private set; }// właściwość 1
         
 
@@ -16,11 +17,12 @@ namespace ZadaniePunkt
        
 
 
+
         public Punkt(int wspx, int wspy) //konstruktor
         {
             X = wspx;
             Y = wspy;
-
+            Licznik++;
         }
 
         public void Prawo(int ileP) //metoda 1

@@ -57,6 +57,13 @@ namespace ZadaniePunkt
 
             XY.Wyswietl();
 
+            for (int i = 0; i < 100; i++)
+            {
+                Punkt punkt = new Punkt(i, i);
+            }
+
+            Console.WriteLine("Licznik:", Punkt.Licznik);
+
 
             Console.ReadLine();
 
